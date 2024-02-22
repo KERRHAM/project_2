@@ -1,3 +1,29 @@
  body{
- background-color: red;
+ background-color: rgb(211, 30, 30);
+}
+
+.start_page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+}
+
+.game_heading {
+    text-decoration: underline;
+}
+
+.quiz_description {
+    justify-content: center;
+}
+
+.begin_quiz {
+    font-size: 30px;
+    background-color: rgb(203, 203, 42);
+}
+
+.badge_start {
+    width: 300px;
+    height: 300px;
+    margin-top: 20px;
 }
