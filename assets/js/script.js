@@ -21,3 +21,13 @@ function turnGrey1() {
     begin.style.backgroundColor = "rgb(130, 139, 157)"
 }
 
+// Code for displaying Overlay Text for Rules? button
+
+function displayOn() {
+    document.getElementById("overlay").style.display = "block";
+  }
+  
+  function displayOff() {
+    document.getElementById("overlay").style.display = "none";
+  }
+

@@ -13,19 +13,31 @@
             <h1 class="game_heading">Are you a true Manchester united fan?</h1>
         </div>
         
-       
-        <div>
-            <!--Description of Quiz-->
-        <p class="quiz_description">Do you want to put your Manchester united knowledge to the test<br>Dive in head first
-            with our 10 Question Quiz</p>
+         <!--Description of Quiz-->
+        <div class="quiz_description">
+          <p>Do you want to put your Manchester united knowledge to the test?<br>Dive in head first
+            with our 10 Question Quiz to find out!!</p>
         </div>
         
         <div>
              <!--Start Quiz Button-->
              <button class="begin_quiz" id="start" onmouseenter="turnYellow();" onmouseleave="turnGrey();">Start Quiz!!</button>
+
+             <div id="overlay" onclick="displayOff()">
+               <div id="overlay-text">
+                <h2>Rules?</h2>
+                <ul>
+                    <li>You cannot return to the previous question</li>
+                    <li>Your First answer cannot be changed</li>
+                    <li>You Will be given 10 questions</li>
+                    <li>Please tackle this quiz truthly without help!!</li>
+                    <li>Most Important..... Have fun!!!!</li>
+                </ul>
+               </div>
+             </div>
         
              <!-- Rules? Button -->
-             <button class="begin_quiz" id="rules" onmouseenter="turnYellow1();" onmouseleave="turnGrey1();">Rules?</button>
+             <button onclick="displayOn()" class="begin_quiz" id="rules" onmouseenter="turnYellow1();" onmouseleave="turnGrey1();">Rules?</button>
         </div>
 
         <div>
