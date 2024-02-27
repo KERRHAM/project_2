@@ -22,6 +22,7 @@ function turnGrey1() {
 }
 
 // Code for displaying Overlay Text for Rules? button
+// W3 schools website
 
 function displayOn() {
     document.getElementById("overlay").style.display = "block";
@@ -30,4 +31,7 @@ function displayOn() {
   function displayOff() {
     document.getElementById("overlay").style.display = "none";
   }
+
+// code for start button to display questions
+// simple step code
 

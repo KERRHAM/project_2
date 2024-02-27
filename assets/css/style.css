@@ -1,5 +1,11 @@
- body{
- background-color: rgb(211, 30, 30);
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+ 
+ body {
+    background-color: rgb(211, 30, 30);
 }
 
 .start_page {
@@ -15,11 +21,13 @@
 
 .quiz_description > p{
     text-align: center;
+    margin-top: 20px;
 }
 
 .begin_quiz {
     font-size: 30px;
     background-color: rgb(130, 139, 157);
+    margin: 20px;
 }
 
 .badge_start {
@@ -52,4 +60,30 @@
 
 #overlay-text h2 {
     text-decoration: underline;
+}
+
+.hide {
+    display: none;
+} 
+
+/* quiz.html code */
+
+#Quiz_area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+#Quiz_area h1 {
+    font-size: 60px;
+    text-decoration: underline;
+}
+
+#quiz_display {
+    color: black;
+    margin-top: 40px;
+    background-color: darkgrey;
+    width: 900px;
+    height: 400px;
 }
