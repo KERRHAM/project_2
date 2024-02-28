@@ -71,7 +71,6 @@
 #Quiz_area {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center
 }
 
@@ -86,4 +85,15 @@
     background-color: darkgrey;
     width: 900px;
     height: 400px;
+}
+
+.quizbtn {
+    flex-direction: row;
+}
+
+.questionbtn {
+    font-size: 30px;
+    background-color: rgb(130, 139, 157);
+    margin: 20px;
+    padding: 10px;
 }
