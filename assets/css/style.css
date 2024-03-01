@@ -56,6 +56,7 @@
     align-items: center;
     font-size: 40px;
     color: rgba(210, 228, 11, 0.885);;
+    margin-top: 30px;
 }
 
 #overlay-text h2 {
@@ -85,15 +86,58 @@
     background-color: darkgrey;
     width: 900px;
     height: 400px;
+    text-align: center;
+}
+
+#quizQuestions {
+    font-size: 40px;
+}
+
+.quizAnswers {
+    font-size: 30px;
+    margin-top: 25px;
+
 }
 
 .quizbtn {
     flex-direction: row;
+    align-items: center;
+    margin: 20px;
 }
 
 .questionbtn {
     font-size: 30px;
     background-color: rgb(130, 139, 157);
     margin: 20px;
+    padding: 10px;
+}
+
+/* results css styling */
+
+#resultsPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+}
+
+#results>h2 {
+    margin-top: 20px;
+}
+
+#score {
+    background-color: darkred;
+    height: 400px ;
+    width: 900px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#score>h2 {
+    text-align: center;
+}
+
+.resultsbtn {
+    font-size: 30px;
     padding: 10px;
 }

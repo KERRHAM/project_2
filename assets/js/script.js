@@ -32,18 +32,35 @@ function displayOn() {
     document.getElementById("overlay").style.display = "none";
   }
 
+// quiz.html code
 // code for start button to display questions
 // simple step code
 
-const question = document.getElementById("quizQuestions")
-const choices = Array.from(document.getElementsByClassName("quizChoices"));
+// code for turning Start quiz? button yellow or grey
+function turnYellow2() {
+    let begin = document.getElementById("next");
+    begin.style.backgroundColor = "yellow";
+}
 
-let currentquestion = {};
-let acceptingAnswers = true;
-let questionCounter = 0;
-let availableQuestions = [];
+function turnGrey2() {
+    let begin = document.getElementById("next");
+    begin.style.backgroundColor = "rgb(130, 139, 157)"
+}
 
-let questions = [
+// code for turning rules? button yellow or grey 
+
+function turnYellow3() {
+    let begin = document.getElementById("submit");
+    begin.style.backgroundColor = "yellow";
+}
+
+function turnGrey3() {
+    let begin = document.getElementById("submit");
+    begin.style.backgroundColor = "rgb(130, 139, 157)"
+}
+
+
+var questions = [
     {
         question: 'When was old Trafford built?',
         choice1: '1910',
@@ -71,3 +88,58 @@ let questions = [
         answer: 1,
     },
 ]
+
+function displayQuestion() {
+
+    var questions = [
+        "What Year was old trafford built?",
+        "Alex Ferguson famously kicked a boot at which player, injuring his eye?",
+        "Who scored the winning goal for Manchester United in their 2-1 Champions League final victory in 1999?"
+    ]
+    
+    var answer = [
+        "A:1990", "B:1910", "C:2005", "D:1905",
+        "A:Ryan Giggs", "B:David Beckham", "C:Eric Cantona", "D:Wayne Rooney",
+        "A:Gary Nevile", "B:David Beckham", "C:Ryan giggs", "D:Ole Gunnar Solskjaer",
+    ]
+
+    document.getElementById("quizQuestions").innerHTML = questions[0];
+    document.getElementById("quizAnswer1").innerHTML = answer[0];
+    document.getElementById("quizAnswer2").innerHTML = answer[1];
+    document.getElementById("quizAnswer3").innerHTML = answer[2];
+    document.getElementById("quizAnswer4").innerHTML = answer[3];
+
+
+}
+        
+displayQuestion()
+
+function nextQuestion() {
+    
+}
+
+
+// results.html code
+
+// code for turning Start quiz? button yellow or grey
+function turnYellow4() {
+    let begin = document.getElementById("finish");
+    begin.style.backgroundColor = "yellow";
+}
+
+function turnGrey4() {
+    let begin = document.getElementById("finish");
+    begin.style.backgroundColor = "rgb(130, 139, 157)"
+}
+
+// code for turning rules? button yellow or grey 
+
+function turnYellow5() {
+    let begin = document.getElementById("again");
+    begin.style.backgroundColor = "yellow";
+}
+
+function turnGrey5() {
+    let begin = document.getElementById("again");
+    begin.style.backgroundColor = "rgb(130, 139, 157)"
+}

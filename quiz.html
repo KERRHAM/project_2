@@ -1,10 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>ManU Quiz</title>
+    <title>Quiz</title>
 </head>
 <body>
  
@@ -16,30 +14,22 @@
 
         <div id="quiz_display">
             
-            <div id="quizQuestions"></div>
-            <div id="quizChoice">
-                <div class="quizchoices" data-number="1"></div>
+            <div>
+                <h2 id="quizQuestions"></h2>
             </div>
-
-            <div id="quizChoice">
-                <div class="quizchoices" data-number="2"></div>
-            </div>
-
-            <div id="quizChoice">
-                <div class="quizchoices" data-number="3"></div>
-            </div>
-
-            <div id="quizChoice">
-                <div class="quizchoices" data-number="4"></div>
-            </div>
-
             
+            <div>
+                <p id="quizAnswer1" class="quizAnswers"></p>
+                <p id="quizAnswer2" class="quizAnswers"></p>
+                <p id="quizAnswer3" class="quizAnswers"></p>
+                <p id="quizAnswer4" class="quizAnswers"></p>
+            </div>
 
         </div>
 
         <div class="quizbtn">
-            <button class="questionbtn">Next</button>
-            <button class="questionbtn">Submit</button>
+           <button class="questionbtn" id="next" onmouseenter="turnYellow2();" onmouseleave="turnGrey2();" style="background-color: rgb(130, 139, 157);">Next Question!</button>
+           <a href="results.html"><button class="questionbtn" id="submit" onmouseenter="turnYellow3();" onmouseleave="turnGrey3();">Submit</button></a>
         </div>
         
     </div>
@@ -47,5 +37,5 @@
     
     
     <script src="assets/js/script.js"></script>
-</body>
-</html>
+
+</body></html>
