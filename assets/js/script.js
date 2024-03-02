@@ -65,10 +65,10 @@ var questions = [
     
     { Question: "What Year was old trafford built?",
       Answers: {
-        A:"1990", 
-        B:"1910", 
-        C:"2005", 
-        D:"1905"
+        A:"A:1990", 
+        B:"B:1910", 
+        C:"C:2005", 
+        D:"D:1905"
       },
         correctAnswer: "B"
     },
@@ -96,13 +96,17 @@ var questions = [
 
 ]
 
-function displayQuestion() {
+function displayQuestion(questions) {
     
-    var questionIndex = questions[0].Answers[0,1,2,3];
-    console.log(questionIndex)
+    var questionIndex = questions;
+    document.getElementById("quizQuestions").innerHTML = questions[0].Question;
+    document.getElementById("quizAnswer1").innerHTML = questions[0].Answers.A
+    document.getElementById("quizAnswer2").innerHTML = questions[0].Answers.B
+    document.getElementById("quizAnswer3").innerHTML = questions[0].Answers.C
+    document.getElementById("quizAnswer4").innerHTML = questions[0].Answers.D
 }
         
-displayQuestion()
+displayQuestion(questions)
 
 
 
