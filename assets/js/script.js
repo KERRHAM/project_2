@@ -210,12 +210,7 @@ var questions = [
   },
     correctAnswer: "A"
   },
-
-
-  
-     
 ]
-
 
 var currentQuestionIndex = 0;
 
@@ -229,17 +224,15 @@ function displayQuestion(index) {
 }
 
 function nextQuestion() {
-    
-    currentQuestionIndex++;
+       
+      currentQuestionIndex++;
     
      if (currentQuestionIndex <= questions.length) {
         displayQuestion(currentQuestionIndex);
-        } else {
-
-         console.log("end of Quiz")
-       }
-
-    }
+         } else {
+             console.log("end of Quiz")
+        }
+}
 
 
 // results.html code
@@ -266,3 +259,13 @@ function turnGrey5() {
     let begin = document.getElementById("again");
     begin.style.backgroundColor = "rgb(130, 139, 157)"
 }
+
+
+//currentQuestionIndex++;
+    
+     //if (currentQuestionIndex <= questions.length) {
+        //displayQuestion(currentQuestionIndex);
+       // } else {
+
+         //console.log("end of Quiz")
+        
