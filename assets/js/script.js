@@ -60,63 +60,50 @@ function turnGrey3() {
 }
 
 
+
 var questions = [
-    {
-        question: 'When was old Trafford built?',
-        choice1: '1910',
-        choice2: '1950',
-        choice3: '2010',
-        choice4: '1990',
-        answer: 1,
+    
+    { Question: "What Year was old trafford built?",
+      Answers: {
+        A:"1990", 
+        B:"1910", 
+        C:"2005", 
+        D:"1905"
+      },
+        correctAnswer: "B"
     },
 
-    {
-        question: 'Who is Manchester Uniteds all-time top scorer?',
-        choice1: 'Cristiano Ronaldo',
-        choice2: 'Ryan Giggs',
-        choice3: 'Wayne Rooney',
-        choice4: 'Dennis Law',
-        answer: 3,
+    { Question: "Alex Ferguson famously kicked a boot at which player, injuring his eye?",
+      Answers: {
+        A:"Ryan Giggs", 
+        B:"David Beckham", 
+        C:"Eric Cantona", 
+        D:"Wayne Rooney"
+      },
+        correctAnswer: "B"
     },
 
-    {
-        question: 'What Family currently own the biggest share of Manchester United?',
-        choice1: 'The Glazers',
-        choice2: 'The busbys',
-        choice3: 'The Nevilles',
-        choice4: 'The Ferdinands',
-        answer: 1,
+    { Question: "Who scored the winning goal for Manchester United in their 2-1 Champions League final victory in 1999?",
+      Answers:{
+        A:"Gary Nevile", 
+        B:"Ryan Giggs", 
+        C:"Eric Cantona", 
+        D:"Ole Gunnar Solskjaer"},
+        correctAnswer: "D"
     },
+    
+    
+
 ]
 
 function displayQuestion() {
-
-    var questions = [
-        "What Year was old trafford built?",
-        "Alex Ferguson famously kicked a boot at which player, injuring his eye?",
-        "Who scored the winning goal for Manchester United in their 2-1 Champions League final victory in 1999?"
-    ]
     
-    var answer = [
-        "A:1990", "B:1910", "C:2005", "D:1905",
-        "A:Ryan Giggs", "B:David Beckham", "C:Eric Cantona", "D:Wayne Rooney",
-        "A:Gary Nevile", "B:David Beckham", "C:Ryan giggs", "D:Ole Gunnar Solskjaer",
-    ]
-
-    document.getElementById("quizQuestions").innerHTML = questions[0];
-    document.getElementById("quizAnswer1").innerHTML = answer[0];
-    document.getElementById("quizAnswer2").innerHTML = answer[1];
-    document.getElementById("quizAnswer3").innerHTML = answer[2];
-    document.getElementById("quizAnswer4").innerHTML = answer[3];
-
-
+    var questionIndex = questions[0].Answers[0,1,2,3];
+    console.log(questionIndex)
 }
         
 displayQuestion()
 
-function nextQuestion() {
-    
-}
 
 
 // results.html code
