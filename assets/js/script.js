@@ -98,7 +98,6 @@ var questions = [
 
 function displayQuestion(questions) {
     
-    var questionIndex = questions;
     document.getElementById("quizQuestions").innerHTML = questions[0].Question;
     document.getElementById("quizAnswer1").innerHTML = questions[0].Answers.A
     document.getElementById("quizAnswer2").innerHTML = questions[0].Answers.B
@@ -108,6 +107,9 @@ function displayQuestion(questions) {
         
 displayQuestion(questions)
 
+function nextQuestion(questions) {
+    
+}
 
 
 // results.html code
