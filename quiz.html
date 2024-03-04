@@ -19,20 +19,42 @@
             </div>
             
             <div>
-                <p id="quizAnswer1" class="quizAnswers"></p>
-                <p id="quizAnswer2" class="quizAnswers"></p>
-                <p id="quizAnswer3" class="quizAnswers"></p>
-                <p id="quizAnswer4" class="quizAnswers"></p>
+                <p onclick="quizValue('A')" id="quizAnswer1" class="quizAnswers"></p>
+                <p onclick="quizValue('B')" id="quizAnswer2" class="quizAnswers"></p>
+                <p onclick="quizValue('C')" id="quizAnswer3" class="quizAnswers"></p>
+                <p onclick="quizValue('D')" id="quizAnswer4" class="quizAnswers"></p>
             </div>
 
         </div>
 
         <div class="quizbtn">
-           <button onclick="nextQuestion()" class="questionbtn" id="next" onmouseenter="turnYellow2();" onmouseleave="turnGrey2();" style="background-color: rgb(130, 139, 157);">Next Question!</button>
-           <a href="results.html"><button class="questionbtn" id="submit" onmouseenter="turnYellow3();" onmouseleave="turnGrey3();">Submit</button></a>
+           <button onclick="displayResults()" class="questionbtn" id="submit" onmouseenter="turnYellow2();"onmouseleave="turnGrey2();">Submit</button>
+        </div>
+    </div>
+  
+    <div id="results_display">
+    <div id="resultsPage">
+        <h1 class="game_heading">Are you a true Manchester United fan?</h1>
+        
+        <div id="results">
+            <div id="score">
+                <h2>Results:</h2>
+                <p class="scoreTally">Correct <span id="correctValue">0</span></p>
+                <p class="scoreTally">Incorrect <span id="incorrectValue">0</span></p>
+                <p id="scoretext"></p>
+            </div>
         </div>
         
+        <div>
+            <a href="index.html"><button class="resultsbtn" id="finish" onmouseenter="turnYellow3();" onmouseleave="turnGrey3();">Finish!!</button></a>
+        </div>
+
+        <div>
+            <a href="quiz.html"><button onclick="displayresultsOff()" class="resultsbtn" id="again" onmouseenter="turnYellow4();" onmouseleave="turnGrey4();">Try Again?</button></a>
+        </div>
     </div>
+  </div> 
+    
 </div>
     
     

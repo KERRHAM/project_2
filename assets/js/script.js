@@ -38,26 +38,44 @@ function displayOn() {
 
 // code for turning Start quiz? button yellow or grey
 function turnYellow2() {
-    let begin = document.getElementById("next");
+    let begin = document.getElementById("submit");
     begin.style.backgroundColor = "yellow";
 }
 
 function turnGrey2() {
-    let begin = document.getElementById("next");
+    let begin = document.getElementById("submit");
     begin.style.backgroundColor = "rgb(130, 139, 157)"
 }
 
-// code for turning rules? button yellow or grey 
+// code for turning finish and try again button's yellow or grey 
 
 function turnYellow3() {
-    let begin = document.getElementById("submit");
+    let begin = document.getElementById("finish");
     begin.style.backgroundColor = "yellow";
 }
 
 function turnGrey3() {
-    let begin = document.getElementById("submit");
-    begin.style.backgroundColor = "rgb(130, 139, 157)"
+  let begin = document.getElementById("finish");
+  begin.style.backgroundColor = "rgb(130, 139, 157)"
 }
+
+function turnYellow4() {
+  let begin = document.getElementById("again");
+  begin.style.backgroundColor = "yellow";
+}
+
+function turnGrey4() {
+  let begin = document.getElementById("again");
+  begin.style.backgroundColor = "rgb(130, 139, 157)"
+}
+
+
+const question = document.getElementById("quizQuestion");
+const answer = Array.from(document.getElementsByClassName("quizAnswers"));
+
+let questioncounter = 0;
+let availableQuestions = 0;
+let results = [];
 
 
 
@@ -72,6 +90,7 @@ var questions = [
       },
         correctAnswer: "B"
     },
+
 
     { Question: "Alex Ferguson famously kicked a boot at which player, injuring his eye?",
       Answers: {
@@ -223,49 +242,51 @@ function displayQuestion(index) {
     document.getElementById("quizAnswer4").innerHTML = question.Answers.D;
 }
 
-function nextQuestion() {
-       
+displayQuestion(0)
+
+
+function quizValue(chosenAnswer) {
+
+  var isCorrect = questions[currentQuestionIndex].correctAnswer === chosenAnswer;
+   results.push({question: questions[currentQuestionIndex].Question, correct: isCorrect});
+    if(questions[currentQuestionIndex].correctAnswer === chosenAnswer) {
+       console.log("Correct")
+    } else {
+       console.log("Incorrect")
+    }
+  
+  if (currentQuestionIndex < questions.length -6) {
       currentQuestionIndex++;
+      displayQuestion(currentQuestionIndex);
+   } else {
+     scoreResult();
+   }
+
+}
+
+function randomQuestion() {
+
+}
+
+function correctAnswerTally() {
     
-     if (currentQuestionIndex <= questions.length) {
-        displayQuestion(currentQuestionIndex);
-         } else {
-             console.log("end of Quiz")
-        }
+  let score = parseInt(document.getElementById("correctValue").innertext);
+      document.getElementById("correctValue").innerText = ++score;
+
 }
 
+function incorrectAnswerTally() {
 
-// results.html code
+  let score = parseInt(document.getElementById("incorrectValue").innertext);
+      document.getElementById("incorrectValue").innerText = ++score;
 
-// code for turning Start quiz? button yellow or grey
-function turnYellow4() {
-    let begin = document.getElementById("finish");
-    begin.style.backgroundColor = "yellow";
+
 }
 
-function turnGrey4() {
-    let begin = document.getElementById("finish");
-    begin.style.backgroundColor = "rgb(130, 139, 157)"
+function displayResults() {
+  document.getElementById("results_display").style.display = "block";
 }
 
-// code for turning rules? button yellow or grey 
-
-function turnYellow5() {
-    let begin = document.getElementById("again");
-    begin.style.backgroundColor = "yellow";
+function displayresultsOff() {
+  document.getElementById("results_display").style.display = "none";
 }
-
-function turnGrey5() {
-    let begin = document.getElementById("again");
-    begin.style.backgroundColor = "rgb(130, 139, 157)"
-}
-
-
-//currentQuestionIndex++;
-    
-     //if (currentQuestionIndex <= questions.length) {
-        //displayQuestion(currentQuestionIndex);
-       // } else {
-
-         //console.log("end of Quiz")
-        

@@ -45,9 +45,9 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgb(211, 30, 30);
     z-index: 2; 
     cursor: pointer;
+    background-color: rgb(211, 30, 30);
   }
 
 #overlay-text {
@@ -73,6 +73,7 @@
     display: flex;
     flex-direction: column;
     align-items: center
+    
 }
 
 #Quiz_area h1 {
@@ -82,7 +83,7 @@
 
 #quiz_display {
     color: black;
-    margin-top: 40px;
+    margin-top: 20px;
     background-color: darkgrey;
     width: 900px;
     height: 400px;
@@ -114,30 +115,57 @@
 
 /* results css styling */
 
+#results_display {
+    position: fixed;
+    display: none; 
+    width: 100%; 
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2; 
+    cursor: pointer;
+    background-color: rgb(211, 30, 30);
+}
+
 #resultsPage {
+
+    font-size: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 30px;
 }
+    
 
 #results>h2 {
     margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #score {
+    text-align: center;
     background-color: darkred;
     height: 400px ;
     width: 900px;
     margin-top: 25px;
     margin-bottom: 25px;
-}
-
-#score>h2 {
-    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .resultsbtn {
+    flex-direction: row;
+    align-items: center;
+    margin: 20px;
     font-size: 30px;
     padding: 10px;
+    background-color: rgb(130, 139, 157);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
