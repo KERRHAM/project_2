@@ -246,48 +246,29 @@ displayQuestion(0)
 
 
 function quizValue(chosenAnswer) {
-
   var isCorrect = questions[currentQuestionIndex].correctAnswer === chosenAnswer;
    results.push({question: questions[currentQuestionIndex].Question, correct: isCorrect});
     if(questions[currentQuestionIndex].correctAnswer === chosenAnswer) {
-       console.log("Correct")
+       console.log("Correct");
     } else {
-       console.log("Incorrect")
+       console.log("Incorrect");
     }
   
   if (currentQuestionIndex < questions.length -6) {
       currentQuestionIndex++;
       displayQuestion(currentQuestionIndex);
-   } else {
-     scoreResult();
    }
-
-}
-
-scoreResult() {
   
-}
+  if (isCorrect) {
+    let increase = document.querySelectorAll(".correctValue");
+     increase[0].textContent = parseInt(increase[0].textContent) + 1;
+  } else {
+    let decrease = document.querySelectorAll(".incorrectValue");
+    decrease[0].textContent = parseInt(decrease[0].textContent) + 1;
+  }
+} 
 
-
-
-function randomQuestion() {
-
-}
-
-function correctAnswerTally() {
-    
-  let score = parseInt(document.getElementById("correctValue").innertext);
-      document.getElementById("correctValue").innerText = ++score;
-
-}
-
-function incorrectAnswerTally() {
-
-  let score = parseInt(document.getElementById("incorrectValue").innertext);
-      document.getElementById("incorrectValue").innerText = ++score;
-
-
-}
+function randomQuestion() {}
 
 function displayResults() {
   document.getElementById("results_display").style.display = "block";
@@ -295,4 +276,4 @@ function displayResults() {
 
 function displayresultsOff() {
   document.getElementById("results_display").style.display = "none";
-}
+ }
