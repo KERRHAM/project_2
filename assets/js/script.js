@@ -266,7 +266,14 @@ function quizValue(chosenAnswer) {
     let decrease = document.querySelectorAll(".incorrectValue");
     decrease[0].textContent = parseInt(decrease[0].textContent) + 1;
   }
+
+  showResultstext();
 } 
+
+function showResultstext() {
+  
+}
+
 
 function randomQuestion() {}
 
