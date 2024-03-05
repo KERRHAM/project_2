@@ -160,7 +160,7 @@
 
 .resultsbtn {
     flex-direction: row;
-    align-items: center;
+    text-decoration: none;
     margin: 20px;
     font-size: 30px;
     padding: 10px;

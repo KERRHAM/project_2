@@ -264,6 +264,12 @@ function quizValue(chosenAnswer) {
 
 }
 
+scoreResult() {
+  
+}
+
+
+
 function randomQuestion() {
 
 }
