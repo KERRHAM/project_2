@@ -275,7 +275,8 @@ function quizValue(chosenAnswer) {
     currentQuestionIndex++;
     displayQuestion(currentQuestionIndex);
   } else {
-    randomQuestion();
+    document.getElementById("quizQuestions").innerHTML = "End Of Quiz"
+    document.getElementById("quizanswer").style.display = "none"
   }
 
   if (isCorrect) {
@@ -285,11 +286,11 @@ function quizValue(chosenAnswer) {
   }
 
   if (increase[0].textContent === "10") {
-    scoretext.innerHTML = "Well done";
+    scoretext.innerHTML = "Well done, Sir Alex would be proud!!!";
   } else if (increase[0].textContent >= "6") {
-    scoretext.innerHTML = "Almost... Please try again!!";
+    scoretext.innerHTML = "Almost, Give it another go to Truly call yourself a United Fan!!!";
    } else if (increase[0].textContent <= "5") {
-    scoretext.innerHTML = "You failed";
+    scoretext.innerHTML = "You failed...Man City are in need of supporters?";
    }
 }
 

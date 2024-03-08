@@ -84,7 +84,8 @@
 #quiz_display {
     color: black;
     margin-top: 20px;
-    background-color: darkgrey;
+    background-color: darkred;
+    border: 3px solid rgb(214, 214, 63);
     width: 900px;
     height: 400px;
     text-align: center;
@@ -148,6 +149,7 @@
 #score {
     text-align: center;
     background-color: darkred;
+    border: 3px solid rgb(214, 214, 63);
     height: 400px ;
     width: 900px;
     margin-top: 25px;
@@ -158,14 +160,18 @@
     align-items: center;
 }
 
+#score>h2 {
+    margin-bottom: 20px;
+}
+
+#scoretext {
+    margin-top: 20px;
+}
+
 .resultsbtn {
     flex-direction: row;
-    text-decoration: none;
     margin: 20px;
     font-size: 30px;
     padding: 10px;
     background-color: rgb(130, 139, 157);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
