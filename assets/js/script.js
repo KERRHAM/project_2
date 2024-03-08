@@ -275,8 +275,8 @@ function quizValue(chosenAnswer) {
     currentQuestionIndex++;
     displayQuestion(currentQuestionIndex);
   } else {
-    document.getElementById("quizQuestions").innerHTML = "End Of Quiz"
-    document.getElementById("quizanswer").style.display = "none"
+    document.getElementById("quizQuestions").innerHTML = "End Of Quiz";
+    document.getElementById("quizanswer").style.display = "none";
   }
 
   if (isCorrect) {
@@ -302,8 +302,7 @@ function displayresultsOff() {
   document.getElementById("results_display").style.display = "none";
 }
 
-function randomQuestion() {
-  var randomIndex = Math.floor(Math.random() * questions.length);
-  return questions[randomIndex];
-}
-randomQuestion()
+// function randomQuestion() {
+  // var randomIndex = Math.floor(Math.random() * questions.length);
+ // return questions[randomIndex];
+//}
