@@ -243,16 +243,36 @@ var currentQuestionIndex = 0;
 let results = [];
 
 function displayQuestion(index) {
-  var question = questions[index];
-  document.getElementById("quizQuestions").innerHTML = question.Question;
-  document.getElementById("quizAnswer1").innerHTML = question.Answers.A;
-  document.getElementById("quizAnswer2").innerHTML = question.Answers.B;
-  document.getElementById("quizAnswer3").innerHTML = question.Answers.C;
-  document.getElementById("quizAnswer4").innerHTML = question.Answers.D;
-
+     var question = questions[index];
+     document.getElementById("quizQuestions").innerHTML = question.Question;
+     document.getElementById("quizAnswer1").innerHTML = question.Answers.A;
+     document.getElementById("quizAnswer2").innerHTML = question.Answers.B;
+     document.getElementById("quizAnswer3").innerHTML = question.Answers.C;
+     document.getElementById("quizAnswer4").innerHTML = question.Answers.D;
 }
 
-displayQuestion(0)
+displayQuestion(0);
+
+function shuffleQuestions(questions) {
+  let shuffledQuestions = [];
+  let usedQuestions = [];
+
+  let i = 0;
+  while(i < questions.length) {
+     let randomQuestion = Math.floor(Math.random() * questions.length);
+     if(!usedQuestions.includes(randomQuestion)) {
+      shuffledQuestions.push(questions[randomQuestion]);
+      usedQuestions.push(randomQuestion);
+      i++
+     }
+  }
+  console.log(shuffledQuestions);
+  return shuffledQuestions;
+}
+
+shuffleQuestions(questions);
+shuffleQuestions(questions);
+shuffleQuestions(questions);
 
 function quizValue(chosenAnswer) {
   var scoretext = document.getElementById("scoretext");
@@ -271,13 +291,13 @@ function quizValue(chosenAnswer) {
     console.log("Incorrect");
   }
 
-  if (currentQuestionIndex < questions.length - 6) {
+  if (currentQuestionIndex < questions.length -6) {
     currentQuestionIndex++;
     displayQuestion(currentQuestionIndex);
   } else {
     document.getElementById("quizQuestions").innerHTML = "End Of Quiz";
     document.getElementById("quizanswer").style.display = "none";
-  }
+  };
 
   if (isCorrect) {
     increase[0].textContent = parseInt(increase[0].textContent) + 1;
@@ -301,8 +321,3 @@ function displayResults() {
 function displayresultsOff() {
   document.getElementById("results_display").style.display = "none";
 }
-
-// function randomQuestion() {
-  // var randomIndex = Math.floor(Math.random() * questions.length);
- // return questions[randomIndex];
-//}
