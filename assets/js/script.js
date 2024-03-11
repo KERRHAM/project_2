@@ -242,37 +242,30 @@ var questions = [
 var currentQuestionIndex = 0;
 let results = [];
 
+
+function shuffleQuestions(questions) {
+  var shuffledQuestions = [];
+
+    for (let i = questions.length - 1; i > 0; i--) { 
+      const j = Math.floor(Math.random() * (i + 1)); 
+      [questions[i], questions[j]] = [questions[j], questions[i]]; 
+    } 
+    return questions; 
+  }; 
+
+let myQuestion;
+myQuestion = shuffleQuestions(questions);
+
 function displayQuestion(index) {
-     var question = questions[index];
-     document.getElementById("quizQuestions").innerHTML = question.Question;
-     document.getElementById("quizAnswer1").innerHTML = question.Answers.A;
-     document.getElementById("quizAnswer2").innerHTML = question.Answers.B;
-     document.getElementById("quizAnswer3").innerHTML = question.Answers.C;
-     document.getElementById("quizAnswer4").innerHTML = question.Answers.D;
+  var question = myQuestion[index];
+  document.getElementById("quizQuestions").innerHTML = question.Question
+  document.getElementById("quizAnswer1").innerHTML = question.Answers.A
+  document.getElementById("quizAnswer2").innerHTML = question.Answers.B
+  document.getElementById("quizAnswer3").innerHTML = question.Answers.C
+  document.getElementById("quizAnswer4").innerHTML = question.Answers.D
 }
 
 displayQuestion(0);
-
-function shuffleQuestions(questions) {
-  let shuffledQuestions = [];
-  let usedQuestions = [];
-
-  let i = 0;
-  while(i < questions.length) {
-     let randomQuestion = Math.floor(Math.random() * questions.length);
-     if(!usedQuestions.includes(randomQuestion)) {
-      shuffledQuestions.push(questions[randomQuestion]);
-      usedQuestions.push(randomQuestion);
-      i++
-     }
-  }
-  console.log(shuffledQuestions);
-  return shuffledQuestions;
-}
-
-shuffleQuestions(questions);
-shuffleQuestions(questions);
-shuffleQuestions(questions);
 
 function quizValue(chosenAnswer) {
   var scoretext = document.getElementById("scoretext");
@@ -291,13 +284,13 @@ function quizValue(chosenAnswer) {
     console.log("Incorrect");
   }
 
-  if (currentQuestionIndex < questions.length -6) {
+  if (currentQuestionIndex < questions.length -1) {
     currentQuestionIndex++;
     displayQuestion(currentQuestionIndex);
   } else {
     document.getElementById("quizQuestions").innerHTML = "End Of Quiz";
     document.getElementById("quizanswer").style.display = "none";
-  };
+  }
 
   if (isCorrect) {
     increase[0].textContent = parseInt(increase[0].textContent) + 1;
@@ -305,11 +298,11 @@ function quizValue(chosenAnswer) {
     decrease[0].textContent = parseInt(decrease[0].textContent) + 1;
   }
 
-  if (increase[0].textContent === "10") {
+  if (increase[0].textContent === "15") {
     scoretext.innerHTML = "Well done, Sir Alex would be proud!!!";
-  } else if (increase[0].textContent >= "6") {
+  } else if (increase[0].textContent >= "10") {
     scoretext.innerHTML = "Almost, Give it another go to Truly call yourself a United Fan!!!";
-   } else if (increase[0].textContent <= "5") {
+   } else if (increase[0].textContent <= "7") {
     scoretext.innerHTML = "You failed...Man City are in need of supporters?";
    }
 }
