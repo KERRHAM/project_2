@@ -8,6 +8,8 @@
     background-color: rgb(211, 30, 30);
 }
 
+/* index.html css styling */
+
 .start_page {
     display: flex;
     flex-direction: column;
@@ -67,7 +69,7 @@
     display: none;
 } 
 
-/* quiz.html code */
+/* quiz.html styling */
 
 #Quiz_area {
     display: flex;
@@ -180,6 +182,8 @@
     background-color: rgb(130, 139, 157);
 }
 
+/* media Query for Displaying quiz on tablets or bigger */
+
 @media only screen and (min-width: 768px){
     
     #quiz_display {
@@ -196,6 +200,8 @@
         font-size:  30px;
     }
 } 
+
+/* media Query for Display quiz on laptops or bigger */
 
 @media only screen and (min-width: 1024px) {
     .start_page {

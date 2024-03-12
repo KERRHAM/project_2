@@ -8,16 +8,21 @@
  
 <div class="container">
     <div id="Quiz_area">
+        
+            <!-- Quiz Title -->
         <div>
             <h1>Manchester United Quiz!!</h1>
         </div>
 
+          <!-- Quiz question display to user -->
         <div id="quiz_display">
-            
+             
+            <!-- Quiz question -->
             <div>
                 <h2 id="quizQuestions"></h2>
             </div>
             
+            <!-- The 4 quiz answers for the user to chose -->
             <div id="quizanswer">
                 <p onclick="quizValue('A')" id="quizAnswer1" class="quizAnswers"></p>
                 <p onclick="quizValue('B')" id="quizAnswer2" class="quizAnswers"></p>
@@ -26,16 +31,19 @@
             </div>
 
         </div>
-
+            
+        <!-- Submit button to display users results -->
         <div class="quizbtn"></div>
            <button onclick="displayResults();" class="questionbtn" id="submit" onmouseenter="turnYellow2();"onmouseleave="turnGrey2();">Submit</button>
         </div>
     </div>
-  
+         
+        <!-- Results display to user -->
     <div id="results_display">
+        <!-- Result title -->
     <div id="resultsPage">
         <h1 class="game_heading">Are you a true Manchester United fan?</h1>
-        
+        <!-- Users score results -->
         <div id="results">
             <div id="score">
                 <h2>Results:</h2>
@@ -44,7 +52,7 @@
                 <p id="scoretext"></p>
             </div>
         </div>
-        
+        <!-- Buttons for finishing or restarting quiz -->
         <div id="restart">
             <a href="index.html"><button class="resultsbtn" id="finish" onmouseenter="turnYellow3();" onmouseleave="turnGrey3();">Finish!!</button></a>
             <a href="quiz.html"><button onclick="displayresultsOff()" class="resultsbtn" id="again" onmouseenter="turnYellow4();" onmouseleave="turnGrey4();">Try Again?</button></a>

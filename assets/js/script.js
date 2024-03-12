@@ -1,75 +1,85 @@
-// code for turning Start quiz? button yellow or grey
+
+
+/** When Mouse hovers over the Start quiz Button, it will turn yellow.
+ */
 function turnYellow() {
   let begin = document.getElementById("start");
   begin.style.backgroundColor = "yellow";
 }
 
+/** When the mouse leaves the start quiz button's area it will turn grey. 
+*/
 function turnGrey() {
   let begin = document.getElementById("start");
   begin.style.backgroundColor = "rgb(130, 139, 157)"
 }
 
-// code for turning rules? button yellow or grey 
-
+/** When Mouse hovers over the Rules? Button, it will turn yellow.
+ */
 function turnYellow1() {
   let begin = document.getElementById("rules");
   begin.style.backgroundColor = "yellow";
 }
 
+/** When Mouse hovers over the Rules? Button, it will turn grey.
+ */
 function turnGrey1() {
   let begin = document.getElementById("rules");
   begin.style.backgroundColor = "rgb(130, 139, 157)"
 }
 
-// Code for displaying Overlay Text for Rules? button
-// W3 schools website
-
+/** When the user Presses the Rules? button, Rules? text content is displayed
+ */
 function displayOn() {
   document.getElementById("overlay").style.display = "block";
 }
 
+/** When the user clicks on Rules? content, The user will exit the Rules? section
+ */
 function displayOff() {
   document.getElementById("overlay").style.display = "none";
 }
 
-// quiz.html code
-// code for start button to display questions
-// simple step code
-
-// code for turning Start quiz? button yellow or grey
+/** When Mouse hovers over the submit Button, it will turn yellow.
+ */
 function turnYellow2() {
   let begin = document.getElementById("submit");
   begin.style.backgroundColor = "yellow";
 }
-
+/** When Mouse leaves the submit Button area, it will turn Grey.
+ */
 function turnGrey2() {
   let begin = document.getElementById("submit");
   begin.style.backgroundColor = "rgb(130, 139, 157)"
 }
 
-// code for turning finish and try again button's yellow or grey 
 
+/** When Mouse hovers over Finish Button, it will turn yellow.
+ */
 function turnYellow3() {
   let begin = document.getElementById("finish");
   begin.style.backgroundColor = "yellow";
 }
-
+/** When Mouse leaves the finish Button's area, it will turn grey.
+ */
 function turnGrey3() {
   let begin = document.getElementById("finish");
   begin.style.backgroundColor = "rgb(130, 139, 157)"
 }
-
+/** When the Mouse hovers over the try again Button, it will turn yellow.
+ */
 function turnYellow4() {
   let begin = document.getElementById("again");
   begin.style.backgroundColor = "yellow";
 }
-
+/** When the Mouse leaves try again? button area, it will turn grey.
+ */
 function turnGrey4() {
   let begin = document.getElementById("again");
   begin.style.backgroundColor = "rgb(130, 139, 157)"
 }
 
-
+// Questions array for storing Quiz questions 
 var questions = [
 
   {
@@ -239,10 +249,14 @@ var questions = [
   },
 ]
 
+// Variable for starting quiz index
 var currentQuestionIndex = 0;
+
+// Variable for storing users results
 let results = [];
 
-
+/** this function will shuffle the questions everytime the user begins the quiz
+ */
 function shuffleQuestions(questions) {
   var shuffledQuestions = [];
 
@@ -253,9 +267,12 @@ function shuffleQuestions(questions) {
     return questions; 
   }; 
 
+// creating a variable to assign it the value of a function.
 let myQuestion;
 myQuestion = shuffleQuestions(questions);
 
+/** This function will display the first question to the users display.
+ */
 function displayQuestion(index) {
   var question = myQuestion[index];
   document.getElementById("quizQuestions").innerHTML = question.Question
@@ -265,11 +282,15 @@ function displayQuestion(index) {
   document.getElementById("quizAnswer4").innerHTML = question.Answers.D
 }
 
+// call function
 displayQuestion(0);
 
+/** This Function will log the users chosen answer
+ * compare it with the correct answer and ether increment the incorrect ot correct value,
+ * Depending on the users score, a paragraph text will display to the user.
+ */
 function quizValue(chosenAnswer) {
   var scoretext = document.getElementById("scoretext");
-  var resultText = document.querySelectorAll(".scoretally")
   let increase = document.querySelectorAll(".correctValue");
   let decrease = document.querySelectorAll(".incorrectValue");
   var isCorrect = questions[currentQuestionIndex].correctAnswer === chosenAnswer;
@@ -307,10 +328,13 @@ function quizValue(chosenAnswer) {
    }
 }
 
+/** When the user Presses submit the results section will appear,
+ */
 function displayResults() {
   document.getElementById("results_display").style.display = "block";
 }
-
+/** This function hides the results section unless submit button is pressed.
+ */
 function displayresultsOff() {
   document.getElementById("results_display").style.display = "none";
 }
