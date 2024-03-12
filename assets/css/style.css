@@ -12,7 +12,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 30px;
+    text-align: center;
+    font-size: 20px;
 }
 
 .game_heading {
@@ -20,6 +21,7 @@
 }
 
 .quiz_description > p{
+    font-size: 25px;
     text-align: center;
     margin-top: 20px;
 }
@@ -51,12 +53,10 @@
   }
 
 #overlay-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     font-size: 40px;
     color: rgba(210, 228, 11, 0.885);;
     margin-top: 30px;
+    font-size: 25px;
 }
 
 #overlay-text h2 {
@@ -72,27 +72,26 @@
 #Quiz_area {
     display: flex;
     flex-direction: column;
-    align-items: center
-    
+    align-items: center;
 }
 
 #Quiz_area h1 {
-    font-size: 60px;
     text-decoration: underline;
+    text-align: center;
 }
 
 #quiz_display {
     color: black;
-    margin-top: 20px;
     background-color: darkred;
     border: 3px solid rgb(214, 214, 63);
-    width: 900px;
-    height: 400px;
+    width: 300px;
+    height: 500px;;
     text-align: center;
+    margin-top: 20px;
 }
 
 #quizQuestions {
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .quizAnswers {
@@ -132,7 +131,8 @@
 
 #resultsPage {
 
-    font-size: 30px;
+    font-size: 20px;
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -150,8 +150,8 @@
     text-align: center;
     background-color: darkred;
     border: 3px solid rgb(214, 214, 63);
-    height: 400px ;
-    width: 900px;
+    height: 300px ;
+    width: 300px;
     margin-top: 25px;
     margin-bottom: 25px;
     position: relative;
@@ -162,16 +162,67 @@
 
 #score>h2 {
     margin-bottom: 20px;
+    font-size: 40px;
+}
+
+.scoreTally {
+    font-size: 30px;
 }
 
 #scoretext {
     margin-top: 20px;
+    font: 30px;
 }
 
 .resultsbtn {
-    flex-direction: row;
-    margin: 20px;
     font-size: 30px;
     padding: 10px;
     background-color: rgb(130, 139, 157);
+}
+
+@media only screen and (min-width: 768px){
+    
+    #quiz_display {
+        width: 700px;
+        height: 400px;
+    }
+
+    #score {
+       height: 300px ;
+       width: 500px;
+    }
+
+    #scoretext {
+        font-size:  30px;
+    }
+} 
+
+@media only screen and (min-width: 1024px) {
+    .start_page {
+        font-size: 30px;
+    }
+
+    #overlay-text {
+        font-size: 40px;
+    }
+
+    #Quiz_area h1 {
+        font-size: 60px;
+    }
+
+    #quiz_display {
+        font-size: 30px;
+        width: 800px;
+        height: 400px;;
+    }
+
+    #quizQuestions {
+        font-size: 37px;
+    }
+
+    #score {
+        height: 400px ;
+        width: 700px;
+    }
+
 }
