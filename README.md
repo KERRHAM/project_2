@@ -113,11 +113,11 @@ Here is the link to my Quiz [Manchester-United-Quiz](https://kerrham.github.io/p
       * I fixed this issue by Puting each button in a Form tag, removing the a tag from the button and putting the  
         link in the action attribute in the form tag.
       
-      * After I resolved this error, there were no errors found using the offical Validator (W3C Validator).
+      * After I resolved this error, there were no errors found using the offical Validator [W3C Validator](https://validator.w3.org/nu/).
 
    * CSS Validation
       
-      * No Errors found, When using the offical (jigsaw) validator.
+      * No Errors found, When using the offical [jigsaw](https://jigsaw.w3.org/css-validator/)validator.
 
      
    * JavaScript Validation
@@ -125,7 +125,7 @@ Here is the link to my Quiz [Manchester-United-Quiz](https://kerrham.github.io/p
       * I had 3 errors all with the same symptons, I had forgotten to put some semicolons at the end of my lines of 
         code.
       
-      * After I had resolved this issue I had no further issues, When using the offical validator (JS Hint).
+      * After I had resolved this issue I had no further issues, When using the offical validator [JS-Hint](https://jshint.com/).
 
      
      

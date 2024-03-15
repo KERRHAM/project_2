@@ -217,7 +217,7 @@ var questions = [
   {
     Question: "Old Trafford is situated on what road?",
     Answers: {
-      A: "A: Sir Matt Busby Way.",
+      A: "A: Sir Matt Busby Way",
       B: "B: Sir Ferguson Way",
       C: "C: Rooney road",
       D: "D: Giggs Street"
