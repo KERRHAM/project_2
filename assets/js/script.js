@@ -1,31 +1,30 @@
-
-
 /** When Mouse hovers over the Start quiz Button, it will turn yellow.
  */
 function turnYellow() {
-  let begin = document.getElementById("start");
-  begin.style.backgroundColor = "yellow";
+  "use strict";
+  let changeYellow = document.getElementById("start");
+  changeYellow.style.backgroundColor = "yellow";
 }
 
 /** When the mouse leaves the start quiz button's area it will turn grey. 
 */
 function turnGrey() {
-  let begin = document.getElementById("start");
-  begin.style.backgroundColor = "rgb(130, 139, 157)"
+  let changeGrey = document.getElementById("start");
+  changeGrey.style.backgroundColor = "rgb(130, 139, 157)"
 }
 
 /** When Mouse hovers over the Rules? Button, it will turn yellow.
  */
 function turnYellow1() {
-  let begin = document.getElementById("rules");
-  begin.style.backgroundColor = "yellow";
+  let rulesYellow = document.getElementById("rules");
+  rulesYellow.style.backgroundColor = "yellow";
 }
 
 /** When Mouse hovers over the Rules? Button, it will turn grey.
  */
 function turnGrey1() {
-  let begin = document.getElementById("rules");
-  begin.style.backgroundColor = "rgb(130, 139, 157)"
+  let rulesGrey = document.getElementById("rules");
+  rulesGrey.style.backgroundColor = "rgb(130, 139, 157)"
 }
 
 /** When the user Presses the Rules? button, Rules? text content is displayed
@@ -43,40 +42,40 @@ function displayOff() {
 /** When Mouse hovers over the submit Button, it will turn yellow.
  */
 function turnYellow2() {
-  let begin = document.getElementById("submit");
-  begin.style.backgroundColor = "yellow";
+  let submitYellow = document.getElementById("submit");
+  submitYellow.style.backgroundColor = "yellow";
 }
 /** When Mouse leaves the submit Button area, it will turn Grey.
  */
 function turnGrey2() {
-  let begin = document.getElementById("submit");
-  begin.style.backgroundColor = "rgb(130, 139, 157)"
+  let submitGrey = document.getElementById("submit");
+  submitGrey.style.backgroundColor = "rgb(130, 139, 157)"
 }
 
 
 /** When Mouse hovers over Finish Button, it will turn yellow.
  */
 function turnYellow3() {
-  let begin = document.getElementById("finish");
-  begin.style.backgroundColor = "yellow";
+  let finishYellow = document.getElementById("finish");
+  finishYellow.style.backgroundColor = "yellow";
 }
 /** When Mouse leaves the finish Button's area, it will turn grey.
  */
 function turnGrey3() {
-  let begin = document.getElementById("finish");
-  begin.style.backgroundColor = "rgb(130, 139, 157)"
+  let finishGrey = document.getElementById("finish");
+  finishGrey.style.backgroundColor = "rgb(130, 139, 157)"
 }
 /** When the Mouse hovers over the try again Button, it will turn yellow.
  */
 function turnYellow4() {
-  let begin = document.getElementById("again");
-  begin.style.backgroundColor = "yellow";
+  let againYellow = document.getElementById("again");
+  againYellow.style.backgroundColor = "yellow";
 }
 /** When the Mouse leaves try again? button area, it will turn grey.
  */
 function turnGrey4() {
-  let begin = document.getElementById("again");
-  begin.style.backgroundColor = "rgb(130, 139, 157)"
+  let againGrey = document.getElementById("again");
+  againGrey.style.backgroundColor = "rgb(130, 139, 157)"
 }
 
 // Questions array for storing Quiz questions 
@@ -265,7 +264,7 @@ function shuffleQuestions(questions) {
       [questions[i], questions[j]] = [questions[j], questions[i]]; 
     } 
     return questions; 
-  }; 
+  }
 
 // creating a variable to assign it the value of a function.
 let myQuestion;
@@ -275,11 +274,11 @@ myQuestion = shuffleQuestions(questions);
  */
 function displayQuestion(index) {
   var question = myQuestion[index];
-  document.getElementById("quizQuestions").innerHTML = question.Question
-  document.getElementById("quizAnswer1").innerHTML = question.Answers.A
-  document.getElementById("quizAnswer2").innerHTML = question.Answers.B
-  document.getElementById("quizAnswer3").innerHTML = question.Answers.C
-  document.getElementById("quizAnswer4").innerHTML = question.Answers.D
+  document.getElementById("quizQuestions").innerHTML = question.Question;
+  document.getElementById("quizAnswer1").innerHTML = question.Answers.A;
+  document.getElementById("quizAnswer2").innerHTML = question.Answers.B;
+  document.getElementById("quizAnswer3").innerHTML = question.Answers.C;
+  document.getElementById("quizAnswer4").innerHTML = question.Answers.D;
 }
 
 // call function

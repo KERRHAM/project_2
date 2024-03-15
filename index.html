@@ -16,14 +16,14 @@
          <!--Description of Quiz-->
         <div class="quiz_description">
           <p>Do you want to put your Manchester united knowledge to the test?<br>Dive in head first
-            with our 10 Question Quiz to find out!!</p>
+            with our 15 Question Quiz to find out!!</p>
         </div>
         
         <div>
              <!--Start Quiz Button-->
-
-            <a href="./quiz.html"><button onclick="randomQuestion()" class="begin_quiz" id="start" onmouseenter="turnYellow();" onmouseleave="turnGrey();">Start Quiz!!</button></a>
-            
+             <form action="./quiz.html">
+                  <button onclick="randomQuestion()" class="begin_quiz" id="start" onmouseenter="turnYellow();" onmouseleave="turnGrey();">Start Quiz!!</button>
+             </form>
             <!-- Rules? text content -->
              
             <div id="overlay" onclick="displayOff()">
@@ -31,15 +31,10 @@
                 <h2>Rules?</h2>
                 <ul>
                     <li>Click on the Answer you think is correct to move on to the next Question</li>
-                    <br>
                     <li>You cannot return to the previous question</li>
-                    <br>
                     <li>Your First answer cannot be changed</li>
-                    <br>
                     <li>You Will be given 15 questions</li>
-                    <br>
                     <li>Please tackle this quiz truthly without help!!</li>
-                    <br>
                     <li>Most Importantly..... Have fun!!!!</li>
                 </ul>
                </div>

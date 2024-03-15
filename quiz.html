@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,7 +20,7 @@
              
             <!-- Quiz question -->
             <div>
-                <h2 id="quizQuestions"></h2>
+                <h2 id="quizQuestions">...</h2>
             </div>
             
             <!-- The 4 quiz answers for the user to chose -->
@@ -34,7 +35,7 @@
             
         <!-- Submit button to display users results -->
         <div class="quizbtn"></div>
-           <button onclick="displayResults();" class="questionbtn" id="submit" onmouseenter="turnYellow2();"onmouseleave="turnGrey2();">Submit</button>
+           <button onclick="displayResults();" class="questionbtn" id="submit" onmouseenter="turnYellow2();" onmouseleave="turnGrey2();">Submit</button>
         </div>
     </div>
          
@@ -54,15 +55,18 @@
         </div>
         <!-- Buttons for finishing or restarting quiz -->
         <div id="restart">
-            <a href="index.html"><button class="resultsbtn" id="finish" onmouseenter="turnYellow3();" onmouseleave="turnGrey3();">Finish!!</button></a>
-            <a href="quiz.html"><button onclick="displayresultsOff()" class="resultsbtn" id="again" onmouseenter="turnYellow4();" onmouseleave="turnGrey4();">Try Again?</button></a>
+            <form id="End" action="index.html">
+                <button class="resultsbtn" id="finish" onmouseenter="turnYellow3();" onmouseleave="turnGrey3();">Finish!!</button>
+            </form>
+            
+            <form action="quiz.html">
+                <button onclick="displayresultsOff()" class="resultsbtn" id="again" onmouseenter="turnYellow4();" onmouseleave="turnGrey4();">Try Again?</button>
+            </form>
         </div>
     </div>
-  </div> 
-    
-</div>
+  </div>
     
     
     <script src="assets/js/script.js"></script>
-
-</body></html>
+</body>
+</html>
