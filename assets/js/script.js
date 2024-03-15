@@ -119,7 +119,7 @@ var questions = [
     Question: "Which player is affectionately known as 'The King' to Manchester United fans?",
     Answers: {
       A: "A: Eric Cantona ",
-      B: "B: Watne Rooney ",
+      B: "B: Wayne Rooney ",
       C: "C: Cristiano Ronaldo",
       D: "D: Alex Ferguson"
     },
