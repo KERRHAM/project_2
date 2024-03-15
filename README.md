@@ -117,7 +117,7 @@ Here is the link to my Quiz [Manchester-United-Quiz](https://kerrham.github.io/p
 
    * CSS Validation
       
-      * No Errors found, When using the offical [jigsaw](https://jigsaw.w3.org/css-validator/)validator.
+      * No Errors found, When using the offical [jigsaw Validator](https://jigsaw.w3.org/css-validator/).
 
      
    * JavaScript Validation
