@@ -1,7 +1,6 @@
 /** When Mouse hovers over the Start quiz Button, it will turn yellow.
  */
 function turnYellow() {
-  "use strict";
   let changeYellow = document.getElementById("start");
   changeYellow.style.backgroundColor = "yellow";
 }
