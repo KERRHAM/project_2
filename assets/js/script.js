@@ -257,6 +257,7 @@ let results = [];
  */
 function shuffleQuestions(questions) {
   var shuffledQuestions = [];
+  document.getElementById("submit").style.display="none";
 
     for (let i = questions.length - 1; i > 0; i--) { 
       const j = Math.floor(Math.random() * (i + 1)); 
@@ -292,6 +293,8 @@ function quizValue(chosenAnswer) {
   let increase = document.querySelectorAll(".correctValue");
   let decrease = document.querySelectorAll(".incorrectValue");
   var isCorrect = questions[currentQuestionIndex].correctAnswer === chosenAnswer;
+  var isIncorrect = questions[currentQuestionIndex].correctAnswer != chosenAnswer;
+
 
   results.push({
     question: questions[currentQuestionIndex].Question,
@@ -307,8 +310,9 @@ function quizValue(chosenAnswer) {
     currentQuestionIndex++;
     displayQuestion(currentQuestionIndex);
   } else {
-    document.getElementById("quizQuestions").innerHTML = "End Of Quiz";
+    document.getElementById("quizQuestions").innerHTML = "End Of Quiz<br>Please Click the submit button for results";
     document.getElementById("quizanswer").style.display = "none";
+    document.getElementById("submit").style.display="block";
   }
 
   if (isCorrect) {
@@ -325,6 +329,7 @@ function quizValue(chosenAnswer) {
     scoretext.innerHTML = "You failed...Man City are in need of supporters?";
    }
 }
+ 
 
 /** When the user Presses submit the results section will appear,
  */

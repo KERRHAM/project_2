@@ -71,6 +71,14 @@
 
 /* quiz.html styling */
 
+.correct {
+    background-color: rgb(10, 110, 10);
+}
+
+.incorrect {
+    background-color: rgb(226, 68, 68);
+}
+
 #Quiz_area {
     display: flex;
     flex-direction: column;
