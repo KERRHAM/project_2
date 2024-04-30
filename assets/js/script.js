@@ -38,19 +38,6 @@ function displayOff() {
   document.getElementById("overlay").style.display = "none";
 }
 
-/** When Mouse hovers over the submit Button, it will turn yellow.
- */
-function turnYellow2() {
-  let submitYellow = document.getElementById("submit");
-  submitYellow.style.backgroundColor = "yellow";
-}
-/** When Mouse leaves the submit Button area, it will turn Grey.
- */
-function turnGrey2() {
-  let submitGrey = document.getElementById("submit");
-  submitGrey.style.backgroundColor = "rgb(130, 139, 157)"
-}
-
 
 /** When Mouse hovers over Finish Button, it will turn yellow.
  */
@@ -257,7 +244,6 @@ let results = [];
  */
 function shuffleQuestions(questions) {
   var shuffledQuestions = [];
-  document.getElementById("submit").style.display="none";
 
     for (let i = questions.length - 1; i > 0; i--) { 
       const j = Math.floor(Math.random() * (i + 1)); 
@@ -303,9 +289,10 @@ function quizValue(chosenAnswer) {
     currentQuestionIndex++;
     displayQuestion(currentQuestionIndex);
   } else {
-    document.getElementById("quizQuestions").innerHTML = "End Of Quiz<br>Please Click the submit button for results";
     document.getElementById("quizanswer").style.display = "none";
-    document.getElementById("submit").style.display="block";
+    document.getElementById("results_display").style.display = "block";
+    document.getElementById("Quiz_area").style.display = "none";
+    
   }
 
   if (isCorrect) {
@@ -321,17 +308,4 @@ function quizValue(chosenAnswer) {
    } else if (increase[0].textContent <= "7") {
     scoretext.innerHTML = "You failed...Man City are in need of supporters?";
    }
-}
- 
-
-/** When the user Presses submit the results section will appear,
- */
-function displayResults() {
-  document.getElementById("results_display").style.display = "block";
-  document.getElementById("Quiz_area").style.display = "none";
-}
-/** This function hides the results section unless submit button is pressed.
- */
-function displayresultsOff() {
-  document.getElementById("results_display").style.display = "none";
 }
