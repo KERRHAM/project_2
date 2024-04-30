@@ -293,8 +293,6 @@ function quizValue(chosenAnswer) {
   let increase = document.querySelectorAll(".correctValue");
   let decrease = document.querySelectorAll(".incorrectValue");
   var isCorrect = questions[currentQuestionIndex].correctAnswer === chosenAnswer;
-  var isIncorrect = questions[currentQuestionIndex].correctAnswer != chosenAnswer;
-
 
   results.push({
     question: questions[currentQuestionIndex].Question,
