@@ -298,11 +298,11 @@ function quizValue(chosenAnswer) {
     question: questions[currentQuestionIndex].Question,
     correct: isCorrect
   });
-  if (questions[currentQuestionIndex].correctAnswer === chosenAnswer) {
-    console.log("Correct");
-  } else {
-    console.log("Incorrect");
-  }
+  //if (questions[currentQuestionIndex].correctAnswer === chosenAnswer) {
+   // console.log("Correct");
+  //} else {
+    //console.log("Incorrect");
+  //}
 
   if (currentQuestionIndex < questions.length -1) {
     currentQuestionIndex++;
