@@ -298,11 +298,6 @@ function quizValue(chosenAnswer) {
     question: questions[currentQuestionIndex].Question,
     correct: isCorrect
   });
-  //if (questions[currentQuestionIndex].correctAnswer === chosenAnswer) {
-   // console.log("Correct");
-  //} else {
-    //console.log("Incorrect");
-  //}
 
   if (currentQuestionIndex < questions.length -1) {
     currentQuestionIndex++;
@@ -333,6 +328,7 @@ function quizValue(chosenAnswer) {
  */
 function displayResults() {
   document.getElementById("results_display").style.display = "block";
+  document.getElementById("Quiz_area").style.display = "none";
 }
 /** This function hides the results section unless submit button is pressed.
  */

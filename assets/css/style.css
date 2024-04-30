@@ -5,7 +5,7 @@
 }
  
  body {
-    background-color: rgb(211, 30, 30);
+    background-color: rgb(211 30 30 / 81%);
 }
 
 /* index.html css styling */
@@ -85,7 +85,7 @@
 
 #quiz_display {
     color: black;
-    background-color: darkred;
+    background-color: #8b000070;
     border: 3px solid rgb(214, 214, 63);
     width: 300px;
     height: 500px;;
@@ -129,7 +129,6 @@
     bottom: 0;
     z-index: 2; 
     cursor: pointer;
-    background-color: rgb(211, 30, 30);
 }
 
 #resultsPage {
@@ -151,7 +150,7 @@
 
 #score {
     text-align: center;
-    background-color: darkred;
+    background-color: #8b000070;;
     border: 3px solid rgb(214, 214, 63);
     height: 300px ;
     width: 300px;
