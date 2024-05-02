@@ -10,6 +10,10 @@
 
 /* index.html css styling */
 
+button:hover {
+    cursor: grab;
+}
+
 .start_page {
     display: flex;
     flex-direction: column;
@@ -99,21 +103,19 @@
 
 .quizAnswers {
     font-size: 30px;
+    flex-direction: column;
     margin-top: 25px;
 
 }
 
-.quizbtn {
-    flex-direction: row;
-    align-items: center;
-    margin: 20px;
+.answers_choice:hover, .answers_choice:active  {
+    background-color: rgba(255, 255, 0, 0.779);
+    font-size: 125%;
+    cursor:grab;
 }
 
-.questionbtn {
-    font-size: 30px;
-    background-color: rgb(130, 139, 157);
-    margin: 20px;
-    padding: 10px;
+#question_counter {
+  font-size: 40px;
 }
 
 /* results css styling */

@@ -25,16 +25,16 @@
             
             <!-- The 4 quiz answers for the user to chose -->
             <div id="quizanswer">
-                <p onclick="quizValue('A')" id="quizAnswer1" class="quizAnswers"></p>
-                <p onclick="quizValue('B')" id="quizAnswer2" class="quizAnswers"></p>
-                <p onclick="quizValue('C')" id="quizAnswer3" class="quizAnswers"></p>
-                <p onclick="quizValue('D')" id="quizAnswer4" class="quizAnswers"></p>
+                <p onclick="quizValue('A')" id="quizAnswer1" class="quizAnswers, answers_choice"></p>
+                <p onclick="quizValue('B')" id="quizAnswer2" class="quizAnswers, answers_choice"></p>
+                <p onclick="quizValue('C')" id="quizAnswer3" class="quizAnswers, answers_choice"></p>
+                <p onclick="quizValue('D')" id="quizAnswer4" class="quizAnswers, answers_choice"></p>
             </div>
 
-            <div>
-                <p>Question<span>1</span></p>
-            </div>
+        </div>
 
+        <div>
+            <p id="question_counter"> Question <span class="Counter">1</span> </p>
         </div>
             
     </div>
@@ -56,7 +56,7 @@
         <!-- Buttons for finishing or restarting quiz -->
         <div id="restart">
             <form id="End" action="index.html">
-                <button class="resultsbtn" id="finish" onmouseenter="turnYellow3();" onmouseleave="turnGrey3();">Finish!!</button>
+                <button class="resultsbtn" class="button_grab" id="finish" onmouseenter="turnYellow3();" onmouseleave="turnGrey3();">Finish!!</button>
             </form>
             
             <form action="quiz.html">

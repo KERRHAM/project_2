@@ -271,7 +271,7 @@ function displayQuestion(index) {
 displayQuestion(0);
 
 /** This Function will log the users chosen answer
- * compare it with the correct answer and ether increment the incorrect ot correct value,
+ * compare it with the correct answer and ether increment the incorrect or correct value,
  * Depending on the users score, a paragraph text will display to the user.
  */
 function quizValue(chosenAnswer) {
@@ -279,6 +279,7 @@ function quizValue(chosenAnswer) {
   let increase = document.querySelectorAll(".correctValue");
   let decrease = document.querySelectorAll(".incorrectValue");
   var isCorrect = questions[currentQuestionIndex].correctAnswer === chosenAnswer;
+  var counter = document.querySelectorAll(".Counter");
 
   results.push({
     question: questions[currentQuestionIndex].Question,
@@ -288,11 +289,11 @@ function quizValue(chosenAnswer) {
   if (currentQuestionIndex < questions.length -1) {
     currentQuestionIndex++;
     displayQuestion(currentQuestionIndex);
+    counter[0].textContent = parseInt(counter[0].textcontent) + 1;
   } else {
     document.getElementById("quizanswer").style.display = "none";
     document.getElementById("results_display").style.display = "block";
     document.getElementById("Quiz_area").style.display = "none";
-    
   }
 
   if (isCorrect) {
