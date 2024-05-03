@@ -289,7 +289,7 @@ function quizValue(chosenAnswer) {
   if (currentQuestionIndex < questions.length -1) {
     currentQuestionIndex++;
     displayQuestion(currentQuestionIndex);
-    counter[0].textContent = parseInt(counter[0].textcontent) + 1;
+    counter[0].textContent = parseInt(counter[0].textContent) + 1;
   } else {
     document.getElementById("quizanswer").style.display = "none";
     document.getElementById("results_display").style.display = "block";
