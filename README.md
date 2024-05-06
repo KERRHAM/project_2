@@ -11,7 +11,31 @@ Here is the link to my Quiz [Manchester-United-Quiz](https://kerrham.github.io/p
 ![am_I_responsive_project2](https://github.com/KERRHAM/Mobile-Mechanic/assets/156520279/1dda1ee3-e58b-4478-923f-0816da8e799b)
 
 
+##  User Experience (UX)
 
+This Manchester United quiz offers the user a challenging but also entertaining experience to see if they can truly call themselves a United fan, This quiz is user friendly with quiz question counters to help the user and colour schemes related to the football club to keep users intrested.
+
+### User Stories
+
+* First-time visitor goals
+  
+  * Easy navigation through the quiz, with no errors.
+  * After 15th question has been answered, score is displayed with appropriate text.
+  * When user clicks Try again or finish buttons at the end the appropriate page is displayed with no errors.
+  * Enjoy the quiz experience.
+
+* Returning Visitor goals
+
+  * Improving their scores when retaking the quiz.
+  * Depending on if their score has increased/decreased, new features are displayed.
+  * Continue enjoying the quiz.
+  * Questions are shuffled everytime the user retakes the quiz.
+
+* Frequent visitor goals
+
+  * After various attempts, the user has mastered all questions.
+  * Share the quiz with others to compete with each other.
+  * continue to enjoy using the quiz.
 
 ## Features
 
@@ -90,9 +114,6 @@ Here is the link to my Quiz [Manchester-United-Quiz](https://kerrham.github.io/p
 ## Bugs
 
   * Solved Bugs
-
-      * With my quiz there was one bug that I couldnt get my head around, but when I figured it out I was kicking 
-        myself!
       
       * The issue I was having was I wanted to target the Id "scoretext" were a certain paragraph would appear 
         depending on the users score. Inside my function I targeted the element using the DOM but while doing this, I had mis-spelled the correct syntax for targetting my ID using the DOM. Instead of document.getElementById I had used document.getElementsById, obvisously this syntax will never work as you want that perticular Id to target one element.
@@ -141,6 +162,13 @@ Here is the link to my Quiz [Manchester-United-Quiz](https://kerrham.github.io/p
    * Unfixed Bugs
       
       * No Unfixed Bugs
+
+## Design
+
+ * Colour Scheme
+    * Primary colors used on the website: ![color_scheme](https://github.com/KERRHAM/project_2/assets/156520279/f721f522-e9d0-4e9c-b821-1531874c36ae)
+
+---
 
     
  ## Deployment
@@ -198,6 +226,6 @@ By forking the repository, we make a copy of the original repository on our GitH
     
      * All my images were aquired from the website pexels.
 
-     * For finding the best questions for my quiz i did some re-search and found the best 15 from the website
+     * For finding the best questions for my quiz I did some re-search and found the best 15 from the website
       [Goal.com](https://www.goal.com/en-gb/news/best-man-utd-quiz-questions-answers-trivia/1zupmdj8ulnm14frxq47ed9ka), All their questions were varied topics that suited what i needed for the quiz.
 
