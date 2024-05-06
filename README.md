@@ -143,16 +143,37 @@ Here is the link to my Quiz [Manchester-United-Quiz](https://kerrham.github.io/p
       * No Unfixed Bugs
 
     
-  ## Deployment
-   
-   * The site was deployed to Github Pages, The steps to do so are as follows.
+ ## Deployment
 
-        * In the Github respository, Navigate to the settings tab.
+### GitHub Pages
 
-        * From the source section drop-down menu, select the master branch.
+GitHub Pages used to deploy live version of the website.
+1. Log in to GitHub and locate [GitHub Repository Manchester_United_Quiz](https://github.com/KERRHAM/project_2)
+2. At the top of the Repository(not the main navigation) locate "Settings" button on the menu.
+3. Scroll down the Settings page until you locate "GitHub Pages".
+4. Under "Source", click the dropdown menu "None" and select "Main" and click "Save".
+5. The page will automatically refresh.
+6. Scroll back to locate the now-published site [Deployed_Quiz](https://kerrham.github.io/project_2/) in the "GitHub Pages" section.
 
-        * Once the Master branch has been selected, The page provided the link to the completed website.
+### Forking the GitHub Repository
 
+By forking the repository, we make a copy of the original repository on our GitHub account to view and change without affecting the original repository by using these steps:
+
+1. Log in to GitHub and locate [GitHub Repository Manchester_United_Quiz](https://github.com/KERRHAM/project_2)
+2. At the top of the Repository(under the main navigation) locate "Fork" button.
+3. Now you should have a copy of the original repository in your GitHub account.
+
+### Local Clone
+
+1. Log in to GitHub and locate [GitHub Repository Manchester_United_Quiz](https://github.com/KERRHAM/project_2)
+2. Under the repository name click "Clone or download"
+3. Click on the code button, select clone with HTTPS, SSH or GitHub CLI and copy the link shown.
+4. Open Git Bash
+5. Change the current working directory to the location where you want the cloned directory to be made.
+6. Type `git clone` and then paste The URL copied in the step 3.
+7. Press Enter and your local clone will be created.
+
+---
   ## Credits
 
    * Content
