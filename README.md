@@ -114,9 +114,22 @@ This Manchester United quiz offers the user a challenging but also entertaining 
 ## Bugs
 
   * Solved Bugs
+
+      * When the user has finished the quiz the appropriate text should be displayed depending on score, when the quiz 
+        ends no text is displayed to the user.
       
-      * The issue I was having was I wanted to target the Id "scoretext" were a certain paragraph would appear 
-        depending on the users score. Inside my function I targeted the element using the DOM but while doing this, I had mis-spelled the correct syntax for targetting my ID using the DOM. Instead of document.getElementById I had used document.getElementsById, obvisously this syntax will never work as you want that perticular Id to target one element.
+      * By double clicking on the quiz page when loaded I used google dev tools to search for any errors in the 
+        console.
+      
+      * When inspecting the console there was a syntax error within script.js file line 278.
+
+      * By opening script.js and scrolling down to line 278, There was a spelling error.
+
+      * When Targetting my id 'score text' I was using the DOM to locate the elements instead of element to target my ID.
+
+      * After resolving this Error the appropriate text is displayed to the user.
+
+
 
 
     ![bugp2](https://github.com/KERRHAM/project_2/assets/156520279/e39a93f2-6df6-4d2c-bb53-bf3a8a085c67)
@@ -223,8 +236,11 @@ By forking the repository, we make a copy of the original repository on our GitH
        Sorting Algorithm which was used for Implementing code inside the shuffleQuestion function.
 
    * Media 
+
+     * [color-mind](http://colormind.io/) was used for chosing my colour scheme to relate with the football club 
+       colours.
     
-     * All my images were aquired from the website pexels.
+     * All my images were aquired from the website [pexels](https://www.pexels.com/)
 
      * For finding the best questions for my quiz I did some re-search and found the best 15 from the website
       [Goal.com](https://www.goal.com/en-gb/news/best-man-utd-quiz-questions-answers-trivia/1zupmdj8ulnm14frxq47ed9ka), All their questions were varied topics that suited what i needed for the quiz.
