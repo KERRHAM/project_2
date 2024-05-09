@@ -97,81 +97,73 @@ This Manchester United quiz offers the user a challenging but also entertaining 
    ![resultsPage](https://github.com/KERRHAM/Mobile-Mechanic/assets/156520279/7916e306-0108-457e-8254-1a7a54ef6c58)
 
 
-   * Testing
+ ## Testing
 
-      * I tested that this project works on diffrent browsers: Safari and Chrome
+  ### Manual Testing
+  
+   * I tested that this project works on diffrent browsers: Safari and Chrome
 
-      * I confirmed my website is responsive, the layout looks great on all the different screen size thanks to  
+   * I confirmed my website is responsive, the layout looks great on all the different screen size thanks to  
         chromes developer tools.
 
-      * I confrimed that the Start Quiz/Rules?,Quiz display and Result pages text are all readable and easy to 
+   * I confrimed that the Start Quiz/Rules?,Quiz display and Result pages text are all readable and easy to 
         understand.
 
-      * I have confirmed My Quiz works, All buttons change colour and when pressed the selected page is presented with 
+   * I have confirmed My Quiz works, All buttons change colour and when pressed the selected page is presented with 
         no errors, My 15 questions are all displayed in the same layout without being repeated and at the end of the quiz the Users results display the correct scores and text.
 
 
-## Bugs
-
-  * Solved Bugs
-
-      * When the user has finished the quiz the appropriate text should be displayed depending on score, when the quiz 
-        ends no text is displayed to the user.
+  ### Validator Testing
+    
+  #### HTML Validation
       
-      * By double clicking on the quiz page when loaded I used google dev tools to search for any errors in the 
-        console.
-      
-      * When inspecting the console there was a syntax error within script.js file line 278.
-
-      * By opening script.js and scrolling down to line 278, There was a spelling error.
-
-      * When Targetting my id 'score text' I was using the DOM to locate the elements instead of element to target my ID.
-
-      * After resolving this Error the appropriate text is displayed to the user.
-
-
-
-
-    ![bugp2](https://github.com/KERRHAM/project_2/assets/156520279/e39a93f2-6df6-4d2c-bb53-bf3a8a085c67)
-
-
-
-
-## Validator Testing
-
-  * HTML Validation
-      
-      * I had one error, it was highlighted because I had my Start Quiz, Finish and Try again? buttons were child 
+   * I had one error, it was highlighted because I had my Start Quiz, Finish and Try again? buttons were child 
         elements to the a tag which linked to the desired page.
       
-      * I fixed this issue by Puting each button in a Form tag, removing the a tag from the button and putting the  
+   * I fixed this issue by Puting each button in a Form tag, removing the a tag from the button and putting the  
         link in the action attribute in the form tag.
       
-      * After I resolved this error, there were no errors found using the offical Validator [W3C Validator](https://validator.w3.org/nu/).
+   * After I resolved this error, there were no errors found using the offical Validator [W3C Validator](https://validator.w3.org/nu/).
 
-   * CSS Validation
+  #### CSS Validation
       
-      * No Errors found, When using the offical [jigsaw Validator](https://jigsaw.w3.org/css-validator/).
+   * No Errors found, When using the offical [jigsaw Validator](https://jigsaw.w3.org/css-validator/).
 
      
-   * JavaScript Validation
+  #### JavaScript Validation
 
-      * I had 3 errors all with the same symptons, I had forgotten to put some semicolons at the end of my lines of 
+   * I had 3 errors all with the same symptons, I had forgotten to put some semicolons at the end of my lines of 
         code.
       
-      * After I had resolved this issue I had no further issues, When using the offical validator [JS-Hint](https://jshint.com/).
+   * After I had resolved this issue I had no further issues, When using the offical validator [JS-Hint](https://jshint.com/).
 
      
      
-   * Accessibility
+  #### Accessibility
 
-      * I confirmed that the colours and text content chosen is easy to read and accessible by running it through 
+   * I confirmed that the colours and text content chosen is easy to read and accessible by running it through 
         Lighthouse in dev tools.
-
+      
       ![lighthouseP2](https://github.com/KERRHAM/Mobile-Mechanic/assets/156520279/ea64934c-0261-4c72-b131-761fce4f3a33)
 
-     
-     
+  ### Solved Bugs
+
+   * When the user has finished the quiz the appropriate text should be displayed depending on score, when the quiz 
+        ends no text is displayed to the user.
+      
+   * By double clicking on the quiz page when loaded I used google dev tools to search for any errors in the 
+        console.
+      
+   * When inspecting the console there was a syntax error within script.js file line 278.
+
+   * By opening script.js and scrolling down to line 278, There was a spelling error.
+
+   * When Targetting my id 'score text' I was using the DOM to locate the elements instead of element to target my ID.
+
+   * After resolving this Error the appropriate text is displayed to the user.
+      
+     ![bugp2](https://github.com/KERRHAM/project_2/assets/156520279/e39a93f2-6df6-4d2c-bb53-bf3a8a085c67)
+
    * Unfixed Bugs
       
       * No Unfixed Bugs
